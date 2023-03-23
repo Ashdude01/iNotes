@@ -55,12 +55,12 @@ if (isset($_SESSION['user'])) {
                                     $mail = new PHPMailer;
                                     $mail->isSMTP();
                                     $mail->SMTPDebug = 2;
-                                    $mail->Host = 'smtp.hostinger.com';
-                                    $mail->Port = 465;
+                                    $mail->Host = '';
+                                    $mail->Port = ;
                                     $mail->SMTPAuth = true;
-                                    $mail->Username = 'inotes@vermatimes.com';
-                                    $mail->Password = 'Ashish@4502';
-                                    $mail->setFrom('inotes@vermatimes.com', 'iNotes');
+                                    $mail->Username = '';
+                                    $mail->Password = '';
+                                    $mail->setFrom();
                                     $mail->addReplyTo($recepient, $name);
                                     $mail->addAddress($recepient, $name);
                                     $mail->Subject = 'Account Verification';
